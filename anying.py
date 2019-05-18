@@ -63,8 +63,8 @@ for i, dat in enumerate(kumpulan[:3]):
     pl.ylabel('Suhu')
 pl.legend(loc='upper left')
 pl.title('D5')
-pl.show()
 pl.savefig('./img/D5.png')
+pl.show()
 
 
 for i, dat in enumerate(kumpulan[2:5]): 
@@ -73,8 +73,8 @@ for i, dat in enumerate(kumpulan[2:5]):
     pl.ylabel('Suhu')
 pl.legend(loc='upper left')
 pl.title('D6.5')
-pl.show()
 pl.savefig('./img/D65.png')
+pl.show()
 
 
 for i, dat in enumerate(kumpulan[5:-1]): 
@@ -83,5 +83,5 @@ for i, dat in enumerate(kumpulan[5:-1]):
     pl.ylabel('Suhu')
 pl.legend(loc='upper left')
 pl.title('CL')
-pl.show()
 pl.savefig('./img/CL.png')
+pl.show()
