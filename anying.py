@@ -32,7 +32,7 @@ for name in nama_sheet:
     pl.xlabel('Suhu')
     pl.ylabel('Frekuensi')
     pl.title(name)
-
+    pl.savefig(f'./img/{name}.png')
     pl.show() 
 
 
@@ -64,6 +64,7 @@ for i, dat in enumerate(kumpulan[:3]):
 pl.legend(loc='upper left')
 pl.title('D5')
 pl.show()
+pl.savefig('./img/D5.png')
 
 
 for i, dat in enumerate(kumpulan[2:5]): 
@@ -73,6 +74,7 @@ for i, dat in enumerate(kumpulan[2:5]):
 pl.legend(loc='upper left')
 pl.title('D6.5')
 pl.show()
+pl.savefig('./img/D65.png')
 
 
 for i, dat in enumerate(kumpulan[5:-1]): 
@@ -82,3 +84,4 @@ for i, dat in enumerate(kumpulan[5:-1]):
 pl.legend(loc='upper left')
 pl.title('CL')
 pl.show()
+pl.savefig('./img/CL.png')
