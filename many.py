@@ -11,7 +11,7 @@ if __name__ == "__main__":
     """)
     choice = input("> ")
     print(choice)
-    if choice == '1':
+    if choice == '2':
         print('you choose 1.')
         print('insert excel filename (don\'t for get the .xlsx in the end)')
         excel = input('> ')
@@ -38,3 +38,26 @@ if __name__ == "__main__":
 
         okay.plot_this(excel=excel,x=kolom[i_x], y=kolom[i_y], sheetname=sheet_name)
 
+    elif choice=='1':
+        print('how many lines?')
+        lines = input('> ')
+        print('filename: ')
+        excel = input('> ')
+        xls = pd.ExcelFile(excel)
+        sheet = xls.sheet_names[0]
+        df = pd.read_excel(xls, sheet)
+        judul = df.columns
+
+        pilihan_x_y = []
+        for i in range(len(judul)): 
+            print(f'{i}. {judul[i]}')
+        print('judul yang akan dibuat x dan y')
+        for i in range(2):
+            pilihan = int(input('> '))
+            pilihan_x_y.append(judul[pilihan])
+        print(f'memilih x: {pilihan_x_y[0]}, dan y: {pilihan_x_y[1]}')
+
+        okay.multiplot(excel, int(lines), pilihan_x_y[0], pilihan_x_y[1])
+
+
+        
