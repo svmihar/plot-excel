@@ -3,12 +3,15 @@ hiya
 
 ## usage
 ### fast plotting 
-`python oneliner.py NAMA_FILE.xlsx 'SHEET_NAME' x y`   
+`python oneliner.py NAMA_FILE.xlsx  x y 'SHEET_NAME'`
 NAMA_FILE: filename of the excel file   
 SHEET_NAME, x, y: self-explanatory   
 ex: python oneliner.py data.xlsx 'Waktu' 'Suhu (°C)' 'd6.5 p9 L6'   
 ![](img/contoh.png)
  
+ 
+ ### multi line plot
+ follow instructions on `python many.py`
 
 ## CL 
 ![](img/CL&#32;L8&#32;P7.5&#32;D5.png)   
