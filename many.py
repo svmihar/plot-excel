@@ -1,4 +1,4 @@
-import argparse, itertools
+import okay
 import pandas as pd
 import matplotlib.pylab as pl
 import numpy as np 
@@ -20,3 +20,21 @@ if __name__ == "__main__":
         print('choose sheet name')
         for i, name in enumerate(xls.sheet_names):
             print(f'{i}. {name}')
+        i_sheet_name = int(input('> '))
+        sheet_name = xls.sheet_names[i_sheet_name]
+        df = pd.read_excel(xls, sheet_name)
+        
+        kolom = df.columns
+        for i, fitur in enumerate(kolom): 
+            print(f'{i}. {fitur}')
+        print('\nChoose x: ')
+        i_x = int(input('> '))
+
+        for i, fitur in enumerate(kolom): 
+            print(f'{i}. {fitur}')
+        print('\nChoose y:')
+        i_y = int(input('> '))
+
+
+        okay.plot_this(excel=excel,x=kolom[i_x], y=kolom[i_y], sheetname=sheet_name)
+
