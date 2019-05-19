@@ -5,9 +5,9 @@ import numpy as np
 
 parser = argparse.ArgumentParser()
 parser.add_argument("excel")
+parser.add_argument("sheetname")
 parser.add_argument("x")
 parser.add_argument("y")
-parser.add_argument("sheetname")
 
 arg = parser.parse_args()
 
