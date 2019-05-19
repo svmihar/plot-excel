@@ -50,9 +50,6 @@ cl3 = pd.read_excel(xls,'CL L8 P7.5 D8')
 kumpulan = [d51,d52,d53,d651,d652,d653,cl1,cl2,cl3]
 
 
-mark = itertools.cycle(('b','g','m','c','m','y','k','r'))
-
-
 cmap = pl.get_cmap('gnuplot')
 colors = [cmap(i) for i in np.linspace(0, 1, 9)]
 
