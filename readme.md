@@ -1,6 +1,12 @@
 # plot file excel
 hiya 
 
+## requirements
+1. install python 
+   1. use anaconda
+2. `pip install -r requirements.txt`
+
+
 ## usage
 ### fast plotting 
 `python oneliner.py NAMA_FILE.xlsx  x y 'SHEET_NAME'`
